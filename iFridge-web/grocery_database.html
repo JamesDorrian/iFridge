@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- THIS FILE DISPLAYS THE USER's GROCERY LIST -->
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <title>iFridge: Grocery list</title>
+    <meta content="View your grocery list here" name="Grocety DB">
+    <!--    CSS/BootStrap    -->
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <!--   JavaScript/JQuery/BootStrap    -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/grocery_database.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <!-- awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<body>
+    <div id="header"></div>
+    <div class="container-fluid"> <!-- Bootstrapping -->
+    <div class="col" style="width:90vw; margin: 0 auto;">
+
+    <form style="width:90vw; margin: 0 auto;"> <!-- Add CSS styling to form in HTML to improve speed of search bar load, this should load before content so the app looks better -->
+            <input id="input_add" placeholder="Add something to your Shopping list..." type="text" style="width: 75%; border:0.5px solid #BDBDBD;">
+            <input type="submit" id="add_item" style="display:inline-block; padding: 12px 20px; border-radius: 5px; background-color:#f4f4f4; border:0; width:20%;">
+    </form>
+
+    <div class="error" id="display_error"></div>
+
+
+    <table id="contenttable" style="width:90vw; margin:0 auto; text-align: center; margin-top:15px;"> <!-- Set view width here to allow -->
+        <!--class="display" cellspacing="0" width="100%"-->
+        <thead>
+            <tr style="font-size: 20px;">
+                <!-- <th>BarcodeID</th> -->
+                <th><i class="fa"></i>PRODUCT<span style="visibility: hidden;">xx</span></th>
+                <th><i class="fa" id="date"></i>DATE<span style="visibility: hidden;">xx</span></th>
+                <th style="display:none;"></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr id="final_row">
+                <td>
+                </td>
+
+                <td>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    </div>
+</body>
+</html>

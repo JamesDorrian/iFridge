@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- USER REGISTRATION PAGE -->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>iFridge: Registration</title>
+        <meta name="Registration page" content="Register your personal details.">
+    <!--    CSS/BootStrap    -->
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        
+    <!--   JavaScript/JQuery/BootStrap    -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script type="text/javascript" src="js/register.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!--  Fonts   -->
+    <link href="https://fonts.googleapis.com/css?family=Abhaya+Libre" rel="stylesheet">
+    </head>
+    
+
+
+       
+
+<!--      This will be where the homepage text will appear     -->
+    <body>
+    <div id="header"></div>
+        <div class='wrap'>
+            <h1>Form:</h1>
+          
+            <form name="reg_form" class="reg_form" method="POST"> <!-- action="php/register.php"-->
+	            Name:<input type="text" name="name" id="name"><br>
+	            Email:<input type="text" name="email" id="email"><br>
+                Age:<input type="text" name="age" id="age"><br>
+            	Country:<input type="text" name="address" id="address"><br>
+	            Password:<span id="subtext"> Your password must contain at least 7 digits consisting of a lowecase,upeercase and a number.</span><input type="text" name="password" id="password"><br>
+            	Confirm Password:<input  type="text" name="confirm_password" id="confirm_password"><br>
+            	<input value="Submit" id="submit_button" name="submit" type="button">
+            </form>
+            <p class="error" id="invalid_name"></p>
+            <p class="error" id="invalid_email"></p>
+            <p class="error" id="invalid_age"></p>
+            <p class="error" id="invalid_address"></p>
+            <p class="error" id="invalid_password"></p>
+            <p class="error" id="password_match_error"></p>
+        </div>
+    </body>
+    
+</html>

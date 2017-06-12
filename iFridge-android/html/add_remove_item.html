@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!-- THIS FILE WAS USED TO TEST THE PHP FILES FOR ADDING BARCODES ** USED FOR STAGE 1 OF DEVELOPMENT -->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>iFridge: Add/Remove Test Page</title>
+    <meta content="View your food items here" name="Item DB">
+    <!-- CSS/Bootstrap -->
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <!--   JavaScript/JQuery/BootStrap    -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/add_remove_item.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <!--  Fonts   -->
+    <link href="https://fonts.googleapis.com/css?family=Abhaya+Libre" rel="stylesheet">
+</head>
+
+
+<body>
+    <div id="header"></div>
+    <div id="content">
+        <p>5000157024671 - Heinz - Baked Beans - 390</p>
+        <p>6221033101517 - Heinz - Tomato Ketchup - 513</p>
+    </div>
+    <!-- This is where the content will be loaded -->
+    <div id="wrap_all_scan"><!-- wraps all of scan area -->
+        <div class="wrap_scan"><!-- wraps scan in area -->
+            <div class="scan" id="hasbarcode" style="background-color: limegreen;"><!-- green button -->
+                Scan In
+            </div>
+
+
+            <div id="manualadd" style="margin: 3px;"> <!-- text below button -->
+                <u>manually add item</u>
+            </div>
+
+
+            <div id="options" style="display:none;">
+                <span id="nobarcode" style="border: 1px solid black; margin: 3px;">Product
+                has no barcode</span>
+            </div>
+            <!-- EO Options -->
+
+
+            <div id="hasbarcodeform" style=
+            "display:none; border: 1px solid black; width: 50%; margin: 0 auto;">
+                <form>
+                    Barcode Number:<input id="barcodeIN" type="text">
+
+                    <div id="barcodeIN_error" style="color:red;">
+                    </div>
+                    <input id="submitbarcodeIN" type="button" value=
+                    "Add this barcode to your">
+                </form>
+            </div>
+            <!-- EO hasbarcodeform -->
+
+
+            <div id="user_prompt_box" style=
+            "display:none; border: 1px solid black; width: 50%; margin: 0 auto;">
+                <form>
+                    ProductName:<input id="ProductName" type="text" placeholder="ProductName"> 
+                    BrandName:<input id="BrandName" type="text" placeholder="BrandName"> 
+                    Solid / Liquid:<br>
+                    in Grams: <input id="gram" type="radio" name="metric">
+                    in Millilitres:<input id="ml" type="radio" name="metric"><br>
+                    <input id="Weight" type="text" placeholder="Weight/Volume">
+
+                    <div id="display_error" style="color: red;"></div>
+                    <div id="display_error1" style="color: red;"></div>
+                    <div id="display_error2" style="color: red;"></div>
+                    <div id="display_error3" style="color: red;"></div>
+                    <input id="user_prompt" type="button" value=
+                    "Add item to personal database">
+                </form>
+            </div>
+            <!-- EO userprompt -->
+        </div>
+        <!-- EO Wrap Scan -->
+
+
+        <div class="wrap_scan">
+            <div class="scan" id="removebarcode" style="background-color: red;">
+                Scan Out
+            </div>
+
+
+            <div id="manualremove" style="margin: 3px;">
+                <u>manually remove item</u>
+            </div>
+
+
+            <div id="removeoptions" style="display:none;">
+                <!-- <span id="removebarcode" style="border: 1px solid black; margin: 3px;">Remove using barcode number</span> -->
+                <span id="removelist" style="border: 1px solid black; margin: 3px;">See
+                List of Items</span>
+            </div>
+            <!-- EO Removeoptions -->
+
+
+            <div id="removebarcodeform" style=
+            "display:none; border: 1px solid black; width: 50%; margin: 0 auto;">
+                <form>
+                    Barcode Number:<input id="barcodeOUT" type="text">
+
+                    <div id="barcodeOUT_error" style="color:red;">
+                    </div>
+                    <input id="submitbarcodeOUT" type="button" value=
+                    "Remove this barcode from your fridge">
+                </form>
+            </div>
+            <!-- EO Removebarcodeform -->
+        </div>
+        <!-- EO Wrap Scan -->
+    </div>
+    <!-- EO Wrap all scan -->
+</body>
+</html>

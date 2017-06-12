@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- THE PAGE WHICH DISPLAYS THE ITEMS THAT ARE CURRENTLY IN THE USER's FRIDGE -->
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <title>iFridge: Item Database</title>
+    <meta content="View your food items here" name="Item DB">
+    <!--    CSS/BootStrap    -->
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <!-- for mobile -->
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <!--   JavaScript/JQuery/BootStrap    -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- date format -->
+    <script src="js/jquery-dateformat.js" type="text/javascript"></script>
+    <script src="js/item_database.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <!-- awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class="container-fluid"> <!-- Bootstrapping -->
+        <div id="content"></div> <!-- This is where the content will be loaded -->
+
+        <form>
+            <input id="search" placeholder="Search..." type="text" style="border: 0.5px solid #BDBDBD;">
+        </form>
+
+        <table id="contenttable" style="text-align: center; width: 90vw; margin: 0 auto; margin-top:15px;">
+            <thead>
+                <tr style="font-size: 20px;">
+                    <th><i class="fa"></i>PRODUCT<span style="visibility: hidden;">xx</span></th>
+                    <th><i class="fa"></i>BRAND<span style="visibility: hidden;">xx</span></th>
+                    <th class="nosort">WEIGHT</th>
+                    <th><i class="fa" id="date"></i>DATE<span style="visibility: hidden;">xx</span></th>
+                    <th style="display:none;">barcodes</th>
+                    <th style="display:none;">delete buttons</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr id="final_row">
+                    <td>
+                    </td>
+
+                    <td>
+                    </td>
+
+                    <td>
+                    </td>
+
+                    <td>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <div class="error" id="display_error"></div>
+    </div>
+</body>
+</html>

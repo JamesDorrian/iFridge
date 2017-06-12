@@ -1,0 +1,146 @@
+html {
+    font-family: 'Work Sans';
+}
+
+@font-face {
+    font-family: "Work Sans";
+    src: url("fonts/WorkSans-Bold.ttf");
+    font-weight: 100;
+}   
+@font-face {
+    font-family: "Work Sans";
+    src: url("fonts/WorkSans-SemiBold.ttf");
+    font-weight: 50;
+}
+@font-face {
+    font-family: "Work Sans";
+    src: url("fonts/WorkSans-Regular.ttf");
+}
+
+
+/* navbar - no margins/padding */
+ul.topnav {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;    
+}
+
+/* float items in the nav bar to the left */
+ul.topnav li {float: left;}
+
+/* style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Register and login in navbar*/
+ul.topnav .slash {
+    margin:0;
+    padding: 14px 2px;
+    color:white;
+}
+
+ul.topnav .navright {
+    display:inline-block;
+    float: right;
+    color: red;
+    text-align:center;
+    padding: 0px;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {
+    background-color: grey;
+    color: lightgray;
+}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+
+/* Image on top of nav bar */
+div.navpic {
+    display:inline-block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Wraps content below navbar, making a new body */
+.wrap {
+    margin: 0 auto;
+    width: 80%;
+    opacity: 0.5;
+    height: 1200px;
+    background-color: beige;
+}
+
+
+/* Registration & Login form stuff */
+/* red error default settings */
+.error {
+    color: red;
+}
+
+/* Blanket the password input */
+#password, #confirm_password { 
+    -webkit-text-security: square;
+}
+
+/* Input boxes */
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+} 
+
+
+
+/* Subtext explaining form input box params */
+#subtext {
+    font-size: 40%;
+    color:blue;
+}
+
+/* Database view / add / remove stuff */
+/* Scan */
+.scan {
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    padding: 2px;
+    width: 120px;
+    height:120px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    font-size: 50px;
+}
+
+#wrap_all_scan a {
+    text-decoration: none;
+    text-underline-position: none;
+}
+
+.wrap_scan {
+    width: 100%;
+    margin-top: 25px;
+    position: relative;
+    text-align: center;
+}
+
+/* Mobile & Tablet responsive CSS */
+@media only screen and (max-width: 1000px) { 
+    #hideme {
+        display:none;
+    }
+}
